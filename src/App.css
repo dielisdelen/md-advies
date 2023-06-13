@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Navigation CSS below */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 20px 10px; 
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #0C228C;
+  padding-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* The spacer is a temp solution, and should be looked at */
+.spacer {
+  width: 162px;
+  flex-grow: 1;
+}
+
+.nav-container ul {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.nav-list {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Home CSS styling below */
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.home-text {
+  width: 50%;
+}
+
+.home-image-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.h1-1 {
+  font-family: 'Faune', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0C228C;
+  font-size: 80px;
+  margin-top: 50px;
+  margin-bottom: -80px;
+}
+
+.h1-2 {
+  font-family: 'Faune', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #0C228C;
+  font-size: 80px;
+  margin-bottom: -80px;
+}
+
+.h1-3 {
+  font-family: 'Faune', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #0C228C;
+  font-size: 80px;
 }
