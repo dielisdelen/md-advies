@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+@import url('https://fonts.cdnfonts.com/css/faune');
 
 /* Global styles */
 
 body {
   font-family: 'Hanken Grotesk', sans-serif;
 }
+
+hr {
+  border: 0; 
+  height: 1px; 
+  background: #3D75C4; 
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 
 /* Navigation CSS below */
 
@@ -152,6 +162,13 @@ nav a {
   font-size: 48px; 
 }
 
+.h3-1 {
+  font-family: 'Faune', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center; 
+}
+
 .homep {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 24px;
@@ -280,6 +297,113 @@ nav a {
   width: 100%; /* ensures that the input and textarea elements take up the full width of the space allocated to them */
 }
 
+/* CV styles */
+
+.cv-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.usps {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.usp-cv {
+  background-color: #CED3DC;
+  color: #0C228C;
+  padding: 1em;
+  margin: 1em;
+  width: calc(50% - 4em);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.usp-cv-Title {
+  font-family: 'Faune', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+
+.usp-cv-Copy {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 16px;
+}
+
+/* CV + ervaringen styles */
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.filter-label {
+  margin-right: 1em;
+}
+
+.filters-container label {
+  margin-right: 20px;
+}
+
+.experiences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.experience-card {
+  background-color: #fff;
+  border: 1px solid #0C228C;
+  padding: 0.5em;
+  margin: 0.5em;
+  width: calc(100% - 2em); /* full width on small screens */
+}
+
+@media screen and (min-width: 768px) {
+  .experience-card {
+    width: calc(49% - 2em); /* half width on wide screens */
+  }
+}
+
+.experience-card-title {
+  font-family: 'Faune', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.experience-card-employer {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.experience-card-tags {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: normal;
+}
+
+.experience-card-description {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: normal;
+}
+
+.experience-divider {
+  border-color: #0C228C;
+}
+
+
 
 
 /* Responsive styles */
@@ -338,4 +462,32 @@ nav a {
 
   }
 
+  .usps {
+    flex-direction: column;
+  }
+
+  .usp-cv {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+
+  .usp-cv-Copy {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 12px;
+  }
+
+  .usp-cv-Title {
+    font-family: 'Faune', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0.5em;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .experience-card {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }

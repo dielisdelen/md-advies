@@ -66,6 +66,7 @@ function Home() {
           </button>
         </form>
       </div>
+      <hr />
       <div>
         <h2 className='h2-1'>Neem direct contact op</h2>
         <ContactForm />
