@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 
+/* Global styles */
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
 /* Navigation CSS below */
 
 nav {
@@ -72,6 +78,8 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border-bottom: 1px solid #3D75C4;
+  padding-bottom: 30px;
 }
 
 .home-text {
@@ -88,6 +96,27 @@ nav a {
 .home-image {
   max-width: 100%;
   height: auto;
+}
+
+.home-button {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.home-usp {
+  width: 100%;
+  margin: 10px;
+}
+
+.home-UKV {
+  width: 100%;
+  margin: 10px;
+  border-top: 1px solid #3D75C4;
+  padding-bottom: 30px;
 }
 
 .h1-1 {
@@ -115,4 +144,198 @@ nav a {
   font-style: normal;
   color: #0C228C;
   font-size: 80px;
+}
+
+.h2-1 {
+  font-family: 'Faune', sans-serif;
+  font-weight: bold;
+  font-size: 48px; 
+}
+
+.homep {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 24px;
+}
+
+.usp-list {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 28px; 
+  margin-top: 10px; 
+}
+
+.cv-button {
+  font-family: 'Faune', sans-serif;
+  font-weight: bold;
+  font-size: 32px; 
+  color: #fff;
+  background-color: #0C228C;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px; 
+  padding: 5px 10px 10px 10px;
+  border-radius: 4px;
+}
+
+.preview-section {
+  display: flex;
+  align-items: center;
+}
+
+.preview-label {
+  margin-right: 10px; /* Adjust as needed */
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 24px; /* Adjust as needed */
+}
+
+.preview-button {
+  font-family: 'Faune', sans-serif;
+  font-weight: bold;
+  font-size: 24px; /* Adjust as needed */
+  color: #fff;
+  background-color: #0C228C;
+  border: none;
+  cursor: pointer;
+  padding: 2px 8px 4px 8px;
+  border-radius: 2px;
+}
+
+/* newsletter signup styles */
+
+.newsletter {
+  margin: 20px 0;
+  background-color: #CED3DC;
+  padding: 20px 40px; /* Change this value to your preference */
+  margin: 0 auto;
+  max-width: 800px; /* Or whatever your max width is */
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.newsletter-input {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.newsletter-button {
+  padding: 10px;
+  background-color: #0C228C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* contact form styles */
+
+.contact-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #CED3DC;
+}
+
+.contact-form-container label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.contact-form-container button {
+  padding: 10px;
+  background-color: #0C228C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between; /* aligns items on the line (left side: label, right side: input) */
+  align-items: center; /* aligns items on the cross-axis (here it centers items vertically) */
+  margin-bottom: 1em; /* adds some space between form fields */
+}
+
+.form-group label {
+  flex: 1; /* take up 1 portion of the available space */
+  padding-right: 1em; /* adds some space between label and input field */
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 2; /* take up 2 portions of the available space, which makes these elements twice as wide as the labels */
+  width: 100%; /* ensures that the input and textarea elements take up the full width of the space allocated to them */
+}
+
+
+
+/* Responsive styles */
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .home-container {
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .h1-1, .h1-2, .h1-3 {
+    font-size: 36px;
+    margin-bottom: -30px;
+  }
+
+  .h1-1 {
+    margin-top: 20px;
+  }
+
+  .home-text {
+    margin-left: 10px;
+    width: 50%;
+  }
+
+  .h2-1 {
+    font-size: 24px;
+  }
+
+  .usp-list {
+    font-size: 18px;
+  }
+
+  .cv-button {
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 2px;
+  }
+
+  .homep {
+    font-size: 16px;
+  }
+
+  .preview-label {
+    font-size: 16px;
+  }
+
+  .preview-button {
+    font-size: 16px;
+
+  }
+
 }
